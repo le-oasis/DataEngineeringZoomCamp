@@ -1,0 +1,24 @@
+gz file command 
+
+curl -o green_tripdata_2019-09.csv.gz https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz
+
+next command 
+
+curl -o taxi_zone_lookup.csv https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv           
+
+
+next 
+Create a simple docker file with entrypoint 
+
+FROM python:3.9
+
+#Install pandas
+RUN pip install pandas 
+
+#Override this entrypoint
+ENTRYPOINT [ "bash" ]
+
+
+in your terminal now, build an "image" - Docker Image off the Dockerfile 
+
+docker build -t test-image:pandas . # the dot is for docker to build the image
