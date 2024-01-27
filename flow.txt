@@ -22,3 +22,15 @@ ENTRYPOINT [ "bash" ]
 in your terminal now, build an "image" - Docker Image off the Dockerfile 
 
 docker build -t test-image:pandas . # the dot is for docker to build the image
+
+
+it will download and install pandas 
+
+after building you csan run the image 
+
+docker run -it test-image:pandas
+
+because entry point is bash, you will get a bash here 
+
+remeber to use version control as you go 
+
