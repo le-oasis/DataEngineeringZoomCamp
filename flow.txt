@@ -41,8 +41,24 @@ docker run -it \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
   -e POSTGRES_DB="ny_taxi" \
-  -v /Users/oasis/Desktop/Mind/2024DataEngieering/DataEngineeringZoomCamp/ny_taxi_postgres_data:/var/lib/postgres/data \
+  -v /workspace/DataEngineeringZoomCamp/ny_taxi_postgres_data:/var/lib/postgres/data \
   -p 5432:5432 \
   postgres:13
 
 
+  pip install pgcli
+
+  query the db 
+
+  install jupyter 
+
+  pd.__version__
+
+
+wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-09.csv.gz
+
+wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv
+
+
+
+gunzip green_tripdata_2019-09.csv.gz
