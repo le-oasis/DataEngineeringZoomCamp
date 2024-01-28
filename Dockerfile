@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 WORKDIR /app
 
 # Copy the pipeline.py file
-COPY ingest_data.py ingest_data.py
+COPY apps/ingest_data.py ingest_data.py
 
 # Override the entrypoint
 ENTRYPOINT [ "python","ingest_data.py" ]
