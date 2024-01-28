@@ -3,3 +3,4 @@ numpy
 pyarrow 
 sqlalchemy
 psycopg2
+argparse
