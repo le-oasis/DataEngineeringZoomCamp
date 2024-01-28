@@ -263,4 +263,4 @@ help.txt
 lakehouse/ny_taxi_postgres_data/*
 docker/lakehouse/ny_taxi_postgres_data/*
 ./lakehouse/ny_taxi_postgres_data/*
-lakehouse/ny_taxi_postgres_data/
+lakehouse/postgres/ny_taxi_postgres_data/
