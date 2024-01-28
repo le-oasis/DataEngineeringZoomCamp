@@ -48,6 +48,8 @@ docker run -it \
 
   pip install pgcli
 
+  pgcli -h localhost -p 5432 -u root -d  ny_taxi
+
   query the db 
 
   install jupyter 
@@ -62,3 +64,28 @@ wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv
 
 
 gunzip green_tripdata_2019-09.csv.gz
+
+
+
+docker run -it \
+    -e POSTGRES_USER="root" \
+    -e POSTGRES_PASSWORD="root" \
+    -e POSTGRES_DB="ny_taxi" \
+    -v /workspace/DataEngineeringZoomCamp/ny_taxi_postgres_data:/var/lib/postgres/data \
+    -p 5432:5432 \
+    --network=oasiscorp \
+    --name pg-database \
+    postgres:13
+
+
+
+docker network create oasiscorp
+
+
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8383:80 \
+  --network=oasiscorp \
+  --name pgadmin \
+  dpage/pgadmin4:latest
