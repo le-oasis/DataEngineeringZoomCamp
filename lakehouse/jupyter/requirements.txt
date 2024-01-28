@@ -2,5 +2,5 @@ pandas
 numpy
 pyarrow 
 sqlalchemy
-psycopg2
+psycopg2-binary
 argparse
