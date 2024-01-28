@@ -10,10 +10,10 @@ services:
       volumes:
         - ./lakehouse/postgres/ny_taxi_postgres_data:/var/lib/postgresql/data:rw
       ports:
-        - "5432:5432"  # Added quotes for port mapping
+        - "5435:5432"  # Added quotes for port mapping
       networks:
         - oasiscorp
-      hostname: pg-database
+      hostname: oasisdb
 
 
     pgadmin:
