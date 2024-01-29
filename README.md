@@ -1,16 +1,6 @@
 # DataEngineeringZoomCamp
 
 # Module 1 Homework: Docker & SQL
-
-**Preparing the Environment**
-
-Before proceeding with the SQL exercises, we'll download the necessary data files using the following commands:
-
-**1. Download the gzipped CSV file:**
-
-
-
-# Data Pipeline in Docker: Homework
 ### Project Overview
 This project aims to create a data pipeline that ingests, processes, and analyzes NY Taxi data using Docker containers. The pipeline involves the following key components:
 
@@ -112,13 +102,13 @@ docker run -it \
   dpage/pgadmin4:latest
 ```
 
-![](./doc/pg-admin.png "pg-admin-load")
+<img src="./doc/pg-admin.png" alt="pg-admin-load" width="300"/>
 
 
 Connecting the two containers in pgadmin:
 
 
-![](./doc/pg-admin-conn.png "pg-admin-conn")
+<img src="./doc/pg-admin-conn.png" alt="pg-admin-conn" width="300"/>
 
 
 
@@ -193,14 +183,12 @@ This command connects to the PostgreSQL database running on localhost with port 
 Once connected, execute SQL queries to check the data. For example:
 
 
-![](./doc/total-count.png "total-count")
+<img src="./doc/total-count.png" alt="total-count" width="300"/>
 
 
 Answering the Homework Question 3:
 
-![](./doc/question-3.png "question-3")
-
-
+<img src="./doc/question-3.png" alt="q3" width="300"/>
 
 
 Remember to replace the credentials and database details with your actual values.
