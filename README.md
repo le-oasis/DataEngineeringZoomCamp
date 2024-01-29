@@ -169,6 +169,27 @@ connection.close()
 ```
 
 
+
+### Data Validation:
+
+After ingesting the data into the PostgreSQL database, it's important to validate that the data has been correctly loaded. You can do this by connecting to the PostgreSQL database using `pgcli` and running some SQL queries to inspect the data.
+
+To connect to your database, use the following command in your terminal:
+
+```
+pgcli -h localhost -p 5435  -u oasis -d ny_taxi
+```
+
+
+This command connects to the PostgreSQL database running on localhost with port 5435, using oasis as the username and ny_taxi as the database name.
+
+Once connected, execute SQL queries to check the data. For example:
+
+
+
+
+
+
 Remember to replace the credentials and database details with your actual values.
 
 ### Utilize Docker for Scalability:
