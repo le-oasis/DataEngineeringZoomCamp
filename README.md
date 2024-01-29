@@ -112,6 +112,13 @@ docker run -it \
   dpage/pgadmin4:latest
 ```
 
+![](./doc/pg-admin.png "pg-admin-load")
+
+
+Connecting the two containers in pgadmin:
+
+
+![](./doc/pg-admin-conn.png "pg-admin-conn")
 
 
 
@@ -186,6 +193,12 @@ This command connects to the PostgreSQL database running on localhost with port 
 Once connected, execute SQL queries to check the data. For example:
 
 
+![](./doc/total-count.png "total-count")
+
+
+Answering the Homework Question 3:
+
+![](./doc/question-3.png "question-3")
 
 
 
