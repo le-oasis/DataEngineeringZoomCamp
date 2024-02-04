@@ -1,0 +1,56 @@
+version: "3.8"
+
+services:
+
+    # PostgreSQL
+    postgres:
+      image: postgres:13
+      env_file:
+        - .env
+      volumes:
+        - ./lakehouse/postgres/ny_taxi_postgres_data:/var/lib/postgresql/data:rw
+      ports:
+        - "5435:5432"  # Added quotes for port mapping
+      networks:
+        - oasiscorp
+      hostname: oasisdb
+
+
+    pgadmin:
+        # PG-Admin
+        image: dpage/pgadmin4:latest
+        env_file:
+          - .env
+        ports:
+          - 8383:80
+        networks:
+          - oasiscorp
+        hostname: pgadmin
+    
+    # Jupyter Notebook - PySpark Enabled
+    jupyter-spark:
+
+          build:
+              context: lakehouse/jupyter
+          hostname: myjupyter
+          container_name: jupyter_container
+          networks:
+              - oasiscorp
+          ports:
+            - "8880:8888"
+          volumes:
+            - ./notebooks:/home/jovyan/work/notebooks/
+            - ./spark/resources/data:/home/jovyan/work/data/
+            - ./spark/resources/jars:/home/jovyan/work/jars/
+            - ./spark/conf:/usr/local/spark/conf
+          restart: always
+          depends_on:
+                  - postgres
+
+
+# Network Bridge Connection
+networks:
+  oasiscorp:
+    name: oasiscorp
+    driver: bridge
+
