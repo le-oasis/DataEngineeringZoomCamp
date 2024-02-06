@@ -11,7 +11,7 @@
 
 
 ---
-# [Deuxième Semaine - Second Week](https://github.com/le-oasis/DataEngineeringZoomCamp/tree/main/02-%20Deuxi%C3%A8me%20Semaine%20-%20Second%20Week):
+# [Deuxième Semaine - Second Week](https://github.com/le-oasis/DataEngineeringZoomCamp/tree/main/02-Deuxième-Semaine-Second-Week):
 
 
 **Overview**
