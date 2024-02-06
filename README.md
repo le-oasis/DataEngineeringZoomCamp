@@ -16,7 +16,7 @@
 
 **Overview**
 - The second week advances our journey into data engineering by incorporating Docker for containerization, exploring sophisticated data transformation techniques, and leveraging multi-platform data storage solutions. 
-- A significant highlight of this week is the introduction of Mage, an open-source orchestration tool designed to enhance data workflow efficiency with principles of flow state, feedback loops, and reduced cognitive load. 
+- A significant highlight of this week is the introduction of Mage, an open-source orchestration tool designed to enhance data workflow efficiency with principles of flow state,.. feedback loops, and reduced cognitive load. 
 - By integrating Mage, we aim to iterate quickly on pipelines, embody software engineering best practices in our data workflows, and achieve seamless data integration across various platforms. Utilizing the New York Yellow Taxi cab dataset, we focus on executing comprehensive data operations, including extraction, transformation, and loading, facilitated by the unique capabilities of Mage within a Docker environment.
 
 **Objectives**
