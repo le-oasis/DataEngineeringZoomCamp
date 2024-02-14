@@ -266,3 +266,5 @@ docker/lakehouse/ny_taxi_postgres_data/*
 lakehouse/postgres/ny_taxi_postgres_data/
 terrademo/keys/*
 terrademo/*
+secrets/*
+./secrets/*
